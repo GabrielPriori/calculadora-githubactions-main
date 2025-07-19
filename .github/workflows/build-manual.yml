@@ -23,7 +23,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
             
-          node-version: '14'
+          node-version: '18'
 
       - name: Limpar dependências antigas
         run: rm -rf node_modules package-lock.json
