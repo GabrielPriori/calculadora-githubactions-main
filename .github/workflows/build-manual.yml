@@ -25,9 +25,12 @@ jobs:
             
           node-version: '14'
 
+      - name: Limpar dependências antigas
+        run: rm -rf node_modules package-lock.json
+
       # Passo 3: Instalar dependências e executar testes    
       - name: Instalar dependências
-        run: npm install --force
+        run: npm install
 
 
       # Passo 4: Executar testes    
